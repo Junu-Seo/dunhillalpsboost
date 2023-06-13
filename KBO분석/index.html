@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="calculate.js" defer></script>
+    <title>롯데자이언츠 당일 출루율 분석 사이트</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        롯데자이언츠와 상대팀의 당일 선발타자 wOBA에 각 타자별 타석수를 곱하여 <br>가중치를 계산한 wOBA을 제공합니다.
+      </h1>
+      <h2>
+        <p><a
+          href="http://www.statiz.co.kr/stat.php?mid=stat&re=0&ys=2023&ye=2023&se=0&te=%EB%A1%AF%EB%8D%B0&tm=&ty
+        =0&qu=auto&po=0&as=&ae=&hi=&un=&pl=&da=1&o1=WOBA&o2=TPA&de=1&lr=0&tr=&cv=&ml=1&sn=30&si=&cn="
+          >타자별 타석 및 wOBA</a
+        ></p>
+        <p>
+          <a
+            href="https://m.sports.naver.com/game/20230525NCLT02023/lineup"
+          >
+            선발타자 라인업</a
+          >(선발타자 라인업은 경기시작 1시간 전 제공됩니다.)</p>
+      </h2>
+    </header>
+    <main>
+      <section>
+        <h1>롯데자이언츠</h1>
+      <p>
+        1번타자 타석<input type="number" id="seat-1" /> wOBA<input
+          type="number"
+          id="wOBA1"
+        />
+      </p>
+      <p>
+        2번타자 타석<input type="number" id="seat-2" /> wOBA<input
+          type="number"
+          id="wOBA2"
+        />
+      </p>
+      <p>
+        3번타자 타석<input type="number" id="seat-3" /> wOBA<input
+          type="number"
+          id="wOBA3"
+        />
+      </p>
+      <p>
+        4번타자 타석<input type="number" id="seat-4" /> wOBA<input
+          type="number"
+          id="wOBA4"
+        />
+      </p>
+      <p>
+        5번타자 타석<input type="number" id="seat-5" /> wOBA<input
+          type="number"
+          id="wOBA5"
+        />
+      </p>
+      <p>
+        6번타자 타석<input type="number" id="seat-6" /> wOBA<input
+          type="number"
+          id="wOBA6"
+        />
+      </p>
+      <p>
+        7번타자 타석<input type="number" id="seat-7" /> wOBA<input
+        type="number"
+        id="wOBA7"
+        />
+      </p>
+      <p>
+        8번타자 타석<input type="number" id="seat-8" /> wOBA<input
+        type="number"
+        id="wOBA8"
+        />
+      </p>
+      <p>
+        9번타자 타석<input type="number" id="seat-9" /> wOBA<input
+        type="number"
+        id="wOBA9"
+        />
+      </p>
+      <button id="lotteCalculate">롯데자이언츠 선발 wOBA 계산하기</button>
+      <p>오늘 롯데 선발타자 평균 wOBA는 <span id="lotteResult"></span> 입니다.</p>
+      </section>
+    <section>
+      <h2>상대팀</h2>
+      <p>
+        1번타자 타석<input type="number" id="seat-1E" /> wOBA<input
+          type="number"
+          id="wOBA1E"
+        />
+      </p>
+      <p>
+        2번타자 타석<input type="number" id="seat-2E" /> wOBA<input
+          type="number"
+          id="wOBA2E"
+        />
+      </p>
+      <p>
+        3번타자 타석<input type="number" id="seat-3E" /> wOBA<input
+          type="number"
+          id="wOBA3E"
+        />
+      </p>
+      <p>
+        4번타자 타석<input type="number" id="seat-4E" /> wOBA<input
+          type="number"
+          id="wOBA4E"
+        />
+      </p>
+      <p>
+        5번타자 타석<input type="number" id="seat-5E" /> wOBA<input
+          type="number"
+          id="wOBA5E"
+        />
+      </p>
+      <p>
+        6번타자 타석<input type="number" id="seat-6E" /> wOBA<input
+          type="number"
+          id="wOBA6E"
+        />
+      </p>
+      <p>
+        7번타자 타석<input type="number" id="seat-7E" /> wOBA<input
+          type="number"
+          id="wOBA7E"
+        />
+      </p>
+      <p>
+        8번타자 타석<input type="number" id="seat-8E" /> wOBA<input
+          type="number"
+          id="wOBA8E"
+        />
+      </p>
+      <p>
+        9번타자 타석<input type="number" id="seat-9E" /> wOBA<input
+          type="number"
+          id="wOBA9E"
+        />
+      </p>
+      <button id="enemyCalculate">상대팀 선발 wOBA 계산하기</button>
+      <p>오늘 상대 선발타자 평균 wOBA는 <span id="enemyResult"></span> 입니다.</p>
+    </section>
+    </main>
+    
+  </body>
+</html>
